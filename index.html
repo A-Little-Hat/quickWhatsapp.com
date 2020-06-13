@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,600&display=swap');
+    *
+    {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: hex(#ece5dd);
+      font-family: 'Work Sans', sans-serif;
+    }
+    form button
+    {
+      color:#00bfa5;
+      padding: 10px;
+      margin: inherit;
+    }
+    a
+    {
+      padding: inherit;
+      background-color: #00bfa5;
+      font-family: 'Work Sans', sans-serif;
+      padding-top: 10px;
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+      padding-block-start: 20px;
+      padding-block-end: 20px;
+      padding-bottom: 10px;
+      position: relative;
+      display: inline-block;
+    } 
+    p
+    {
+      padding-top: 30px;
+    }
+    header
+    {
+      background-color: #00bfa5;
+      color: #00bfa5;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-top: 15px;
+    }
+    
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>whatsApp</title>
+</head>
+<body>
+    <header>
+      <a href="whatsapp.html" ><font color="white">Home</font></a>
+      <a href="https://www.whatsapp.com/features/"><font color="white">Features</font></a>
+      <a href="https://www.whatsapp.com/download/"><font color="white">Download</font></a>
+      <a href="https://github.com/A-Little-Hat"><font color="white">Dev_Profile</font></a>
+    
+</header>
+<center><p><h3>Send Messege Without Saving Number</h3></p>
+<br>
+<p><h4>
+  Messege The Person Directly
+</h4></p>
+<p>
+  <h4>
+    <font color="blue">
+    Just Enter Number Below And Hit Messege
+  </font>
+  </h4>
+</p>
+
+<form>
+  <input type="number" required min="6200000000" max="9999999999" length="10" name="number" id="number" placeholder="enter number Without country code" size="50px">
+  <br>
+  <button class="submit" id="btn">Messege</button>
+</form>
+<script>
+document.getElementById("btn").onclick=()=>{
+  event.preventDefault();
+  var num = document.getElementById("number").value
+  location.href="https://wa.me/91"+num
+  }
+</script>
+</center>
+</body>
+</html>
